@@ -1,0 +1,347 @@
+#navbar {
+  height: 55px;
+  width: 100%;
+  background-color: #283e4a;
+}
+
+body {
+  background-color: #ecf2ec;
+}
+
+#img1 {
+  position: relative;
+  bottom: 18px;
+  left: 40px;
+}
+
+#searchbar {
+  position: relative;
+  bottom: 15px;
+}
+
+#list1 {
+  padding-bottom: 15px;
+}
+
+#list1 li {
+  list-style: none;
+  display: inline-block;
+  color: white;
+  margin-right: 32px;
+}
+
+#searchbar {
+  margin-left: 20px;
+}
+
+#home {
+  margin-left: 100px;
+}
+
+#profile_div {
+  position: absolute;
+  left: 120px;
+  top: 158px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+#sharePost {
+  height: 80px;
+  position: absolute;
+  left: 385px;
+  bottom: 399px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background-color: white;
+}
+
+#side_nav {
+  position: absolute;
+  left: 75%;
+  bottom: 100px;
+}
+
+#imgProfile {
+  height: 100px;
+  margin-left: 37px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 28px;
+  border: 2px solid white;
+}
+
+#txtStrat {
+  position: absolute;
+  top: 10px;
+}
+
+#list2 li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+#list2 p {
+  position: relative;
+  left: 54px;
+  bottom: 35px;
+}
+
+#divCamera:hover {
+  background-color: rgba(33, 143, 255, 0.08);
+  cursor: pointer;
+}
+
+#divVideo:hover {
+  background-color: rgba(33, 143, 255, 0.08);
+  cursor: pointer;
+}
+
+#divFile:hover {
+  background-color: rgba(33, 143, 255, 0.08);
+  cursor: pointer;
+}
+
+#txtarticle {
+  background-color: rgba(33, 143, 255, 0.08);
+  height: 40px;
+  width: 38rem;
+  margin-left: -1px;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+#postTab {
+  width: 38rem;
+  height: 470px;
+  background-color: #f8f8f8;
+  margin-left: 27.4%;
+  margin-top: 15%;
+  display: none;
+}
+
+#close {
+  width: 38rem;
+  height: 50px;
+  background-color: #2b7de4;
+}
+
+#note {
+  width: 34rem;
+  height: 200px;
+  margin-left: 5%;
+  margin-top: 5%;
+  border: none;
+}
+
+#btn1 {
+  width: 110px;
+  margin-left: 40%;
+  margin-top: 4%;
+  border: 1px solid #727272;
+}
+
+#btn1:hover {
+  border: 2px solid #000000;
+}
+
+#btn2:hover {
+  cursor: no-drop;
+}
+
+#btnClose:hover {
+  background-color: rgba(208, 208, 208, 0.35);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#imgPlus:hover {
+  background-color: rgba(208, 208, 208, 0.35);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#imgCamera:hover {
+  background-color: rgba(208, 208, 208, 0.35);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#imgVideo:hover {
+  background-color: rgba(208, 208, 208, 0.35);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#imgNote:hover {
+  background-color: rgba(208, 208, 208, 0.35);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#messageTab {
+  width: 18rem;
+  height: 48px;
+  background-color: #283e4a;
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+  border-radius: 2px;
+}
+
+#active {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #65c000;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 9px;
+  left: 14%;
+}
+
+#messageBody {
+  width: 18rem;
+  height: 22rem;
+  background-color: #f8f8f8;
+  position: fixed;
+  right: 30px;
+  bottom: 0;
+  display: none;
+}
+
+#msgsearch {
+  width: 15rem;
+  height: 2rem;
+  border: 1px solid black;
+  margin-left: 23px;
+  position: relative;
+  top: 10px;
+}
+
+#chatList li {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#chatList :hover {
+  cursor: pointer;
+  background-color: rgba(216, 216, 216, 0.28);
+}
+
+#chatList {
+  position: relative;
+  right: 21px;
+}
+
+#chatList p {
+  margin-left: 22%;
+  margin-top: -15%;
+}
+
+#chatList h6 {
+  margin-left: 22%;
+  margin-top: -5%;
+}
+
+#chatHead {
+  width: 20rem;
+  height: 24.8rem;
+  background-color: #fbfdff;
+  position: fixed;
+  right: 360px;
+  bottom: 0px;
+  display: none;
+}
+
+#top {
+  width: 20rem;
+  height: 48px;
+  background-color: #283e4a;
+}
+
+#chatHead2 p {
+  margin-left: 25%;
+  margin-top: -10%;
+}
+
+#chatHead2 a {
+  margin-left: 9%;
+  position: relative;
+  bottom: 8px;
+  color: black;
+}
+
+#chatHead2 li {
+  margin-top: 10px;
+}
+
+#txtMsg {
+  position: relative;
+  right: -20px;
+  bottom: 10px;
+  border: none;
+}
+
+#chatClose:hover {
+  background-color: #727272;
+  border-radius: 50px;
+}
+
+#content1 {
+  background-color: #fbfdff;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  position: relative;
+  left: 28.5%;
+  top: 220px;
+  display: none;
+}
+
+#content2 {
+  background-color: #fbfdff;
+  position: relative;
+  left: 28.5%;
+  top: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+#myProfile {
+  width: 18rem;
+  height: 34rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  right: 23%;
+  top: 55px;
+  display: none;
+}
+
+#myProfile p {
+  margin-left: 28%;
+  margin-top: -30px;
+}
+
+#myProfile b {
+  margin-left: 2%;
+  margin-top: -80px;
+}
+
+#me:hover {
+  cursor: pointer;
+}
+
+#content3 {
+  background-color: #f8f8f8;
+  position: relative;
+  left: 28.5%;
+  top: 230px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+}
+
+#list2 button {
+  width: 90px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

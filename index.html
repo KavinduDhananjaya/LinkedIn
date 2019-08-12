@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LinkedIn</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!--==================================navigation bar===================================-->
+<header>
+    <div id="navbar">
+        <ul id="list1">
+            <li><img src="images/img1.png" id="img1" width="40" alt=""></li>
+            <li id="searchbar">
+                <input type="text" class="col-md-12" placeholder="Search">
+            </li>
+            <li id="home"><img src="images/icons8_Home_100px.png" width="28" alt="" style="margin-left: 6px"><br>
+                <label for="">Home</label>
+            </li>
+            <li id="network"><img src="images/icons8_Staff_100px.png" width="28" alt="" style="margin-left: 26px"><br>
+                <label for="">My Network</label>
+            </li>
+            <li id="jobs"><img src="images/icons8_Briefcase_100px.png" width="25" alt="" style="margin-left: 3px"><br>
+                <label for="">Jobs</label>
+            </li>
+            <li id="message"><img src="images/icons8_Send_Email_100px.png" width="25" alt="" style="margin-left: 20px;"><br>
+                <label for="">Messaging</label>
+            </li>
+
+            <li id="notification"><img src="images/icons8_Notification_100px.png" width="25" alt=""
+                                       style="margin-left: 25px"><br>
+                <label for="">Notification</label>
+            </li>
+
+            <li id="me" onclick="openProfile()"><img src="images/pro2.jpg" style="border-radius: 50px;margin-left: -1px"
+                                                     width="28" alt=""><br>
+                <label for="">Me▾</label>
+            </li>
+
+        </ul>
+    </div>
+</header>
+<!--===============================close navigation bar================================-->
+
+
+<!--=============================profile=======================-->
+
+<div class="row" style="width: 14rem;height: 25rem" id="profile_div">
+    <img src="images/Background_Photo_Place_Holder_Design-300x190.jpg" alt="" style="width: 14rem;height: 5rem">
+    <div class="card-body" style="background-color: white">
+
+        <img id="imgProfile" src="images/pro2.jpg" width="100px" alt="">
+
+        <h5 class="card-title">Welcome , Kavindu</h5>
+        <h6 class="card-subtitle mb-2 text-muted">Update your profile</h6>
+        <hr>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+
+    </div>
+</div>
+
+<!--========================post bar=========================-->
+
+
+<div class="row" style="width: 38rem;height: 100px" id="sharePost">
+    <div class="col-md-6" id="camera" style="">
+        <img src="images/icons8_Edit_Property_96px_1.png" alt="" width="30" style="margin-left: 20%;margin-top: 27px">
+        <a href="#" id="txtStrat" onclick="postclick()">Start a post</a>
+    </div>
+    <div class="col-md-2" style="border-left: 1px solid rgba(0, 0, 0, 0.25)" id="divCamera">
+        <img src="images/icons8_Camera_96px.png" width="25" alt="" style="margin-left: 22px;margin-top: 18px">
+    </div>
+    <div class="col-md-2" style="border-left: 1px solid rgba(0, 0, 0, 0.25)" id="divVideo">
+        <img src="images/icons8_Video_Call_96px.png" width="25" alt="" style="margin-left: 22px;margin-top: 18px">
+    </div>
+    <div class="col-md-2" style="border-left: 1px solid rgba(0, 0, 0, 0.25)" id="divFile">
+        <img src="images/icons8_Document_96px.png" width="22" alt="" style="margin-left: 22px;margin-top: 18px">
+    </div>
+    <div class="row" id="txtarticle">
+        <a href="" style="margin-left: 15px;margin-top: 7px">Write an article </a>
+        <p style="margin-top: 7px">on LinkedIn</p>
+    </div>
+</div>
+
+
+<div class="model">
+<div id="postTab">
+    <div id="close">
+        <img src="images/pro2.jpg" width="45" alt=""
+             style="border-radius: 40px;border: 2px solid white;margin-left: 45%;margin-top: 4%">
+        <img id="btnClose" src="images/icons8_Multiply_96px_1.png" width="30" alt=""
+             style="margin-left: 40%;margin-bottom: 3%" onclick="postclickclose()">
+    </div>
+
+    <div id="btn1"><img src="images/icons8_Europe_100px.png" width="18" alt="" style="margin-left: 6px">Anyone ▼</div>
+
+    <textarea type="textarea" id="note" placeholder="What do you want to talk about ?"></textarea>
+    <p style="margin-left: 5%;margin-top: 5%;color: #2b7de4">Add hashtag</p>
+    <p style="margin-left: 25%;margin-top: -40px">Help the right people see your post</p>
+
+    <hr>
+
+    <img id="imgPlus" src="images/icons8_Plus_96px.png" width="25" alt="" style="margin-left: 25px">
+    <img id="imgCamera" src="images/icons8_Camera_96px.png" width="25" alt="" style="margin-left: 18px">
+    <img id="imgVideo" src="images/icons8_Video_Call_96px.png" width="25" alt="" style="margin-left: 18px">
+    <img id="imgNote" src="images/icons8_Document_96px.png" width="20" alt="" style="margin-left: 18px">
+    <button id="btn2" type="button" class="btn btn-primary" style="margin-left: 55%" onclick="setStatus()">Post</button>
+
+</div>
+</div>
+
+<!--==========================content=========================-->
+<div>
+    <div class="row" style="width: 38rem;height: 500px" id="content1"></div>
+
+    <div class="row" style="width: 38rem;height: 600px" id="content2">
+        <p style="margin: 10px">Kalana Sasanka Keembiya Hetti & Kavindu Dhananjaya and 30 others follow LinkedIn</p>
+
+        <p>You’re only a few steps away from generating high-quality leads on LinkedIn. Get started with LinkedIn
+            ads</p>
+        <img src="images/LinkedIn.png" alt="" style="position: relative;bottom: 30px">
+
+        <img src="images/icons8_Facebook_Like_100px.png" width="20" alt="" style="margin-left: 20px">
+        <img src="images/icons8_Comments_96px.png" alt="" width="20" style="margin-left: 20px">
+        <img src="images/icons8_Forward_Arrow_100px.png" alt="" width="20" style="margin-left: 20px">
+
+    </div>
+
+
+    <div class="row" style="width: 38rem;height: 600px" id="content3">
+        <p style="margin: 10px">Kalana Sasanka Keembiya Hetti & Kavindu Dhananjaya and 30 others follow LinkedIn</p>
+
+        <p>You’re only a few steps away from generating high-quality leads on LinkedIn. Get started with LinkedIn
+            ads</p>
+        <img src="images/maxresdefault.jpg" alt="" style="position: relative;bottom: 30px">
+
+        <img src="images/icons8_Facebook_Like_100px.png" width="20" alt="" style="margin-left: 20px">
+        <img src="images/icons8_Comments_96px.png" alt="" width="20" style="margin-left: 20px">
+        <img src="images/icons8_Forward_Arrow_100px.png" alt="" width="20" style="margin-left: 20px">
+
+    </div>
+    <!--=======================side bar=======================-->
+
+    <div class="card" style="width: 18rem; height: 25rem" id="side_nav">
+        <div class="card-body">
+            <h5 class="card-title" style="margin-left: 55px">Add your feed</h5>
+            <hr>
+
+            <ul id="list2">
+                <li><img src="images/linkedIn_PNG16.png" alt="" width="40" style="border-radius: 40px">
+                    <p style="font-size: 12px">Kavindu Dhananjaya</p>
+
+                </li>
+                <li><img src="images/linkedIn_PNG16.png" alt="" width="40" style="border-radius: 40px">
+                    <p style="font-size: 12px">Kavindu Dhananjaya</p>
+
+                <li><img src="images/linkedIn_PNG16.png" alt="" width="40" style="border-radius: 40px">
+                    <p style="font-size: 12px">Kavindu Dhananjaya</p>
+
+                <li><img src="images/linkedIn_PNG16.png" alt="" width="40" style="border-radius: 40px">
+                    <p style="font-size: 12px">Kavindu Dhananjaya</p>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+
+    <!--=======================messaging============================-->
+
+    <div id="messageTab" onclick="chatOn()">
+
+
+        <img src="images/pro2.jpg" width="30" alt="" style="border-radius: 40px;margin-left: 7%">
+        <div id="active"></div>
+        <img src="images/icons8_Edit_Row_104px.png" width="20" alt="" style="margin-left: 55%">
+        <img src="images/icons8_Settings_96px.png" width="20" alt="" style="margin: 5%">
+    </div>
+
+    <div id="messageBody">
+
+        <div id="msgsearch">
+            <img src="images/icons8_Search_100px_1.png" width="20" alt="">
+            <p style="position: relative;bottom: 23px;left: 30px">search</p>
+            <img src="images/icons8_Tune_100px.png" width="20" alt="" style="margin-left: 210px;margin-top: -126px">
+        </div>
+
+        <ul id="chatList">
+            <li onclick="chat2()"><img src="images/IMG-20190106-WA0117.jpg" width="40" height="40"
+                                       style="border-radius: 100px" alt="">
+                <p>Akila Jayasanka </p>
+                <h6>you : 😁😁😁</h6>
+            </li>
+            <hr>
+            <li onclick="chat2()"><img src="images/IMG-20190106-WA0126.jpg" width="40" height="40"
+                                       style="border-radius: 100px" alt="">
+                <p>Kalana Sasanka </p>
+                <h6>Kalana : 👌👌👌👌</h6></li>
+            <hr>
+            <li onclick="chat2()"><img src="images/IMG-20190106-WA0130.jpg" width="40" height="40"
+                                       style="border-radius: 100px" alt="">
+                <p>Rivindu Munashigha </p>
+                <h6>you : 😂😂😂</h6></li>
+            <hr>
+        </ul>
+    </div>
+
+
+    <div id="chatHead">
+        <div id="top">
+
+            <a href="" style="color: white;margin-left: 10px">Kalana Sasanka</a>
+            <p style="color: white;margin-left: 10px;font-size: 12px">⊙Mobile</p>
+            <img src="images/icons8_Enlarge_104px_1.png" width="20" alt="" style="margin-left: 70%;margin-top: -100px">
+            <img src="images/icons8_Ellipsis_100px.png" width="18" alt="" style="margin-left: 5px;margin-top: -100px">
+            <img onclick="chat2Close()" id="chatClose" src="images/icons8_Multiply_96px_1.png" width="20" alt=""
+                 style="margin-left: 5px;margin-top: -100px">
+        </div>
+
+        <ul id="chatHead2" style="list-style: none;margin-top: 20px">
+            <li><img src="images/pro2.jpg" width="40" height="40" style="border-radius: 100px" alt="">
+                <p>het anwai..??</p>
+            </li>
+            <li><img src="images/IMG-20190106-WA0126.jpg" width="40" height="40" style="border-radius: 100px" alt="">
+                <a href="">Kalana Sasanka</a>
+                <p>ooooooo.....</p></li>
+            <li><img src="images/pro2.jpg" width="40" height="40" style="border-radius: 100px" alt="">
+                <p>het anwai..??</p></li>
+            <li><img src="images/IMG-20190106-WA0126.jpg" width="40" height="40" style="border-radius: 100px" alt="">
+                <a href="">Kalana Sasanka</a>
+                <p>het anwai..??</p></li>
+        </ul>
+        <hr style="color: blue">
+        <textarea name="" id="txtMsg" cols="27" rows="2" placeholder="Write a message"></textarea>
+        <div style="background-color: rgba(180,180,180,0.34);width: 20rem;height: 38px">
+            <p style="margin-top:0;font-size: 12px;margin-left:185px">Press Enter to Send ・・</p>
+            <img src="images/icons8_Full_Image_96px.png" width="20" alt=""
+                 style="position: absolute;bottom: 10px;left: 20px">
+            <img src="images/icons8_Link_100px.png" width="20" alt=""
+                 style="position: absolute;bottom: 10px;left: 50px">
+            <img src="images/icons8_Happy_96px.png" width="20" alt=""
+                 style="position: absolute;bottom: 10px;left: 70px">
+
+
+        </div>
+    </div>
+
+    <!--=========================profile=========================-->
+
+
+    <div id="myProfile">
+        <img src="images/pro2.jpg" width="60" height="60"
+             style="border-radius: 100px;border: 2px solid white;margin-left: 12px;margin-top: 15px" alt="">
+        <b>Kavindu Dhananjaya</b>
+        <p>Student Of Institute of Java & software Engineering</p>
+
+        <a href="" style="margin-left: 30%">View profile</a>
+
+        <hr>
+        <h6 style="margin-top: -10px;margin-left: 5%;">ACCOUNT</h6>
+        <hr>
+
+        <h6 style="margin-left: 13px;color: #727272">Settings & Privacy</h6>
+        <h6 style="margin-left: 13px ;color: #727272">Language</h6>
+
+        <hr>
+        <h6 style="margin-top: -10px;margin-left: 5%;">NEED HELP?</h6>
+        <hr>
+        <h6 style="margin-left: 13px ;color: #727272">Open Quick Help</h6>
+
+        <hr>
+        <h6 style="margin-top: -10px;margin-left: 5%;">MENAGE</h6>
+        <hr>
+
+        <h6 style="margin-left: 13px;color: #727272">Posts & Activity</h6>
+        <h6 style="margin-left: 13px ;color: #727272">Job posting Account</h6>
+        <hr>
+        <h6 style="margin-left: 13px ;color: #727272">Sign Out</h6>
+
+    </div>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
